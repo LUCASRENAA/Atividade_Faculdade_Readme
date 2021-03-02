@@ -94,9 +94,10 @@ no console escreva
 
 ```
 # To install the latest version from Github:
-# install.packages("devtools")
+install.packages("devtools")
 devtools::install_github("tylermorganwall/rayshader")
-
+install.packages("raster")
+install.packages("rgdal")
 ```
 
 Crie um R script(clica no papal com um + em baixo de file)
