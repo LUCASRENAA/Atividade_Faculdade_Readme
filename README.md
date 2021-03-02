@@ -78,3 +78,55 @@ Código pronto :D
 
 - [x] ![alt text](https://github.com/LUCASRENAA/Atividade_Faculdade_Readme/blob/main/imgs/1.png?raw=true)
 
+# Exemplo 2
+
+Vá no RStudio
+`
+File - > New project -> New Directory -> New Project
+`
+Coloque qualquer nome no directory name
+
+`
+Create project
+`
+
+no console escreva
+
+```
+# To install the latest version from Github:
+# install.packages("devtools")
+devtools::install_github("tylermorganwall/rayshader")
+
+```
+
+Crie um R script(clica no papal com um + em baixo de file)
+
+Copie esse código nele
+
+```
+
+library(rayshader)
+
+#Here, I load a map with the raster package.
+loadzip = tempfile() 
+download.file("https://tylermw.com/data/dem_01.tif.zip", loadzip)
+localtif = raster::raster(unzip(loadzip, "dem_01.tif"))
+unlink(loadzip)
+
+#And convert it to a matrix:
+elmat = raster_to_matrix(localtif)
+
+#We use another one of rayshader's built-in textures:
+elmat %>%
+  sphere_shade(texture = "desert") %>%
+  add_water(detect_water(elmat), color = "desert") %>%
+  add_shadow(ray_shade(elmat), 0.5) %>%
+  add_shadow(ambient_shade(elmat), 0) %>%
+  plot_map()
+
+
+
+
+```
+
+- [x] ![alt text](https://github.com/LUCASRENAA/Atividade_Faculdade_Readme/blob/main/imgs/2.png?raw=true)
