@@ -1,6 +1,6 @@
 # Passo a passo de como usar o R para projeções 3D
 
-# Exemplo 1
+# Exemplo 1 (https://rdrr.io/cran/plot3D/man/image3D.html)
 
 Vá no RStudio
 `
@@ -78,7 +78,7 @@ Código pronto :D
 
 - [x] ![alt text](https://github.com/LUCASRENAA/Atividade_Faculdade_Readme/blob/main/imgs/1.png?raw=true)
 
-# Exemplo 2
+# Exemplo 2 (https://github.com/tylermorganwall/rayshader)
 
 Vá no RStudio
 `
