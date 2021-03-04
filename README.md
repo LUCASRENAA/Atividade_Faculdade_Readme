@@ -1,5 +1,7 @@
 # Passo a passo de como usar o R para projeções 3D
 
+### Trabalho de Luiza Alencar e Lucas Renan
+
 # Exemplo 1 (https://rdrr.io/cran/plot3D/man/image3D.html)
 
 Vá no RStudio
@@ -98,6 +100,8 @@ install.packages("devtools")
 devtools::install_github("tylermorganwall/rayshader")
 install.packages("raster")
 install.packages("rgdal")
+install.packages("magrittr")
+magrittr
 ```
 
 Crie um R script(clica no papal com um + em baixo de file)
