@@ -101,7 +101,7 @@ devtools::install_github("tylermorganwall/rayshader")
 install.packages("raster")
 install.packages("rgdal")
 install.packages("magrittr")
-magrittr
+
 ```
 
 Crie um R script(clica no papal com um + em baixo de file)
