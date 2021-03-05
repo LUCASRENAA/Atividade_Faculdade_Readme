@@ -97,10 +97,11 @@ no console escreva
 ```
 # To install the latest version from Github:
 install.packages("devtools")
-devtools::install_github("tylermorganwall/rayshader")
-install.packages("raster")
-install.packages("rgdal")
-install.packages("magrittr")
+install.packages("rayshader")
+#devtools::install_github("tylermorganwall/rayshader")
+#install.packages("raster")
+#install.packages("rgdal")
+#install.packages("magrittr")
 
 ```
 
@@ -109,7 +110,7 @@ Crie um R script(clica no papal com um + em baixo de file)
 Copie esse código nele
 
 ```
-
+library(magrittr)
 library(rayshader)
 
 #Here, I load a map with the raster package.
